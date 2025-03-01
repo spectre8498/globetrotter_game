@@ -5,10 +5,9 @@ const AlertComponent = ({ type = "success", message = "Operation successful!", d
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    // Show the notification with animation
+    
     setVisible(true);
 
-    // Auto-hide the notification after 'duration' milliseconds
     const timer = setTimeout(() => {
       setVisible(false);
     }, duration);
